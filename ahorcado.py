@@ -63,3 +63,12 @@ def ahorcado ():
         else :
             print("\nEsta letra no es válida")
 
+    #el jugador llega a esta linea cuando completa las palabras o se le agotan las vidas
+    if vidas == 0:
+        print(vidas_diccionario_visual[vidas])
+        print(f"!Ahorcado! Perdiste. Lo lamento mucho, la palabra era: {palabra}")
+    else:
+        print(f"!Exelente! !adivinaste la palabra{palabra}!")
+
+ahorcado()
+        
